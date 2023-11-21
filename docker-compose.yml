@@ -1,0 +1,8 @@
+services:
+  apache:
+    image: httpd:latest
+    container_name: Apache2
+    ports:
+    - '443:443'
+    volumes:
+    - ./website:/usr/local/apache2/htdocs
